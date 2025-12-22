@@ -46,7 +46,7 @@
                 const totalFee = buyFee + sellFee;
 
                 const taxRate = 0.0015;
-                const tax = Math.round(sellAmount * taxRate);
+                const tax = Math.floor(sellAmount * taxRate);
 
                 const grossProfit = sellAmount - buyAmount;
                 const netProfit = grossProfit - totalFee - tax;
